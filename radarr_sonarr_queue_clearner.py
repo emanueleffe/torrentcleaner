@@ -230,7 +230,7 @@ if auto_fetch_extension_filter:
     # log_message (f"Downloading latest extension filter list from {extension_filter_URL}", log_rate=1)
     suspicious_extensions = load_suspicious_extensions(extension_filter_URL)
     if suspicious_extensions is None:
-        log_message("Failed to download extension filter list. Falling back to manual extension filter list.", log_rate=2)
+        #log_message("Failed to download extension filter list. Falling back to manual extension filter list.", log_rate=2)
         suspicious_extensions = manual_extension_filter
     else:
         if optional_extension_filter:
